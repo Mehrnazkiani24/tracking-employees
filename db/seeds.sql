@@ -6,7 +6,7 @@ VALUES ("customer service"),
        ("servicing"),
        ("operations");
 
-INSERT INTO role (tile,salary,department_id)
+INSERT INTO role (title,salary,department_id)
 VALUES ( "Manager of customer service!",1248728,1),
        ( "Manager of sales!",1267468,2),
        ("Manager of Marketing!",8787673,3),
