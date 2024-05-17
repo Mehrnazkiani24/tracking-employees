@@ -1,7 +1,7 @@
 USE employee_db;
 
 select * from employee;
-select * frpm role;
+select * from role;
 select * from department;
 
 
