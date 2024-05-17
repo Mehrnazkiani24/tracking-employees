@@ -48,8 +48,8 @@ function init() {
             case "View Employee Detail":
                 ViewEmployeeDetail();
                 break;
-            case "Add Deparment":
-                AddEmployee();
+            case "Add Department":
+                AddDepartment();
                 break;
             case "Add role":
                 AddRole();
@@ -103,6 +103,45 @@ function ViewEmployeeDetail() {
             console.table(result)
             init()
         })
+}
+
+function AddDepartment(){
+    inquirer.prompt([
+        {
+            type:"input",
+            message:"Enter Department name: ",
+            name:"dname"
+        }
+    ]).then(({dname}) => {
+        db.query("INSERT INTO department (name) VALUES (?);",dname,function(err,result){if(err) throw err;
+            console.log(result)
+            init()
+        })
+    })
+}
+function AddRole(){
+    inquirer.prompt([
+        {
+            type:"title",
+            message:"Enter Department name: ",
+            name:"dname"
+        },
+        {
+            type:"salary",
+            message:"Enter Department name: ",
+            name:"dname"
+        },
+        {
+            type:"departmet",
+            message:"Enter Department name: ",
+            name:"dname"
+        }
+    ]).then(({dname}) => {
+        db.query("INSERT INTO department (name) VALUES (?);",dname,function(err,result){if(err) throw err;
+            console.log(result)
+            init()
+        })
+    })
 }
 
 init()
