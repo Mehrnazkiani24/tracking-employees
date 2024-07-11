@@ -7,4 +7,4 @@ WHEN I choose to view all departments
 
 
 
-
+![screenshott](./Screenshot%202024-07-10%20at%208.39.19%20PM.png)
